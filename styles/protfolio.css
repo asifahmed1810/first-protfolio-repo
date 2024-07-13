@@ -18,6 +18,7 @@
     background-image: url(../images/developer.png),url(../images/header_bg.png);
     background-repeat: no-repeat;
     background-position: top left, bottom right;
+    
 }
 
 
@@ -29,7 +30,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 50px 200px;
+    margin: 0px 200px;
 }
 .nav-title{
     font-weight: 700;
@@ -38,6 +39,7 @@ nav{
 .dark-2{
     color: #474747;
 }
+
 
    
 nav ul{
@@ -176,4 +178,28 @@ footer input[type="text"],footer input[type="email"]{
     padding: 10px 20px;
     margin-bottom: 24px;
     border: none;
+}
+
+
+/* responsive media query */
+
+.hide{
+    display: none;
+}
+
+@media screen  and (max-width:576px) {
+    .skills-container ,.resume-container ,footer, .about-items{
+        flex-direction: column;
+    }
+    footer , .about{
+        padding: 20px;
+    }
+
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"],footer input[type="email"]{
+        width: calc(100% - 40px);
+    }
+    
 }
